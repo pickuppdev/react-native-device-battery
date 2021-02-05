@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
   s.authors      = package['author']
   s.homepage     = package['homepage']
   s.platforms    = { :ios => "9.0", :osx => "10.14" }
+ 
+  s.source       = { :git => "https://github.com/pickuppdev/react-native-device-battery", :tag => "v#{s.version}" }
   s.source_files  = "ios/**/*.{h,m}"
   s.requires_arc = true
 
